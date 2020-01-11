@@ -1,20 +1,29 @@
-.box{
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation: 5s scaleandRotateSqure infinite ease-in-out;
- }
+body{
+  height: 1000px;
+  margin: 0;
+}
 
- @keyframes scaleandRotateSqure{
-   0%{
-     transform: none;
-   }
-   50%{
-     transform: rotate(1turn) scale(.5, .5);
-     color: white;
-   }
-   100%{
-     transform: none;
-     color: blue;
-   }
- }
+#dotRotate{
+  background-color: #76C4C6;
+  width:100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#barcode{
+  background-color: #1EAC9C;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot{
+  font-size: 100px;
+  color: white;
+  margin: 10px;
+}
