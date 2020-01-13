@@ -6,7 +6,7 @@ body{
 #dotRotate{
   background-color: #76C4C6;
   width:100%;
-  height: 50%;
+  height: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,8 +22,103 @@ body{
   align-items: center;
 }
 
+#dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: 1s RotateDot infinite ease-in-out;
+
+}
+
 .dot{
-  font-size: 100px;
-  color: white;
+  border-radius: 10px;
+  background-color: white;
+  height: 10px;
+  width: 10px;
   margin: 10px;
+}
+
+@keyframes RotateDot{
+  30%, 100% {
+    transform: rotate(180deg);
+  }
+}
+
+.code{
+  margin : 5px;
+  width:20px;
+  height:60px;
+  background-color: white;
+}
+
+.code:first-child{
+  animation: 1s RotateBar-1 infinite linear;
+}
+.code:nth-child(2){
+  animation: 1s RotateBar-2 infinite linear;
+}
+.code:nth-child(3){
+  animation: 1s RotateBar-3 infinite linear;
+}
+.code:nth-child(4){
+  animation: 1s RotateBar-4 infinite linear;
+}
+.code:nth-child(5){
+  animation: 1s RotateBar-5 infinite linear;
+}
+@keyframes RotateBar-1{
+  0%{
+    transform: scaleY(1);
+  }
+  20%{
+    transform: scaleY(3);
+  }
+  40%{
+    transform: scaleY(1);
+  }
+}
+@keyframes RotateBar-2{
+  10%{
+    transform: scaleY(1);
+  }
+  30%{
+    transform: scaleY(3);
+  }
+  50%{
+    transform: scaleY(1);
+  }
+}
+@keyframes RotateBar-3{
+  20%{
+    transform: scaleY(1);
+  }
+  40%{
+    transform: scaleY(3);
+  }
+  60%{
+    transform: scaleY(1);
+  }
+}
+@keyframes RotateBar-4{
+  30%{
+    transform: scaleY(1);
+  }
+  50%{
+    transform: scaleY(3);
+  }
+  70%{
+    transform: scaleY(1);
+  }
+}
+@keyframes RotateBar-5{
+  40%{
+    transform: scaleY(1);
+  }
+  60%{
+    transform: scaleY(3);
+  }
+  80%{
+    transform: scaleY(1);
+  }
 }
