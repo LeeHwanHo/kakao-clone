@@ -1,0 +1,14 @@
+.start-bar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+
+.start-bar i {
+    font-size: 14px;
+}
+
+.start-bar .status-bar__batteruy-level{
+    margin-left: 5px;
+}
